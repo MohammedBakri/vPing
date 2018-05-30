@@ -1,0 +1,55 @@
+{
+  "name": "vping",
+  "version": "1.0.0",
+  "description": "alten",
+  "main": "server-node/server.js",
+  "scripts": {
+    "init-data-store": "node server-node/init-data-store.js",
+    "test": "mocha --recursive",
+    "start": "node server-node/server.js",
+    "build": "npx webpack --config webpack.config.js",
+    "dev": "webpack-dashboard -- node server-node/server.js",
+    "server": "npx webpack --config webpack.config.js && node server-node/server.js"
+  },
+  "keywords": [
+    "alten",
+    "vping"
+  ],
+  "author": "Mohammed Bakri",
+  "license": "MIT",
+  "dependencies": {
+    "alasql": "^0.4.5",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.2",
+    "css-loader": "^0.28.11",
+    "express": "^4.16.3",
+    "express-status-monitor": "^1.0.1",
+    "happypack": "^5.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "mocha": "^5.2.0",
+    "moment": "^2.22.1",
+    "mongodb": "^2.2.33",
+    "morgan": "^1.9.0",
+    "npm": "^6.1.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-table": "^6.8.6",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.10.0",
+    "webpack-dashboard": "^2.0.0",
+    "webpack-node-externals": "^1.7.2",
+    "webpack-obfuscator": "^0.16.0"
+  },
+  "devDependencies": {
+    "webpack-command": "^0.2.0"
+  }
+}

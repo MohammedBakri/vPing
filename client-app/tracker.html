@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title>Vehicles Tracker</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="ClientScripts/react-table/react-table.css" />
+</head>
+
+<body>
+    <div style="padding:0;margin-top: -40px;" class="col-lg-12 col-sm-12">
+        <div class="card hovercard">
+            <div class="card-background">
+            </div>
+            <div class="useravatar">
+                <img alt="" src="http://asrcontrolsolution.com/Images/fourwheeler.png">
+            </div>
+            <div class="card-info">
+                <span class="card-title">Vehicles Tracker</span>
+
+            </div>
+        </div>
+        <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+                <button type="button" id="Signals" class="btn btn-primary" href="#tab1" data-toggle="tab">
+                    <span class="fas fa-signal" aria-hidden="true"></span>
+                    <div class="hidden-xs">Signals</div>
+                </button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" id="dashboard" class="btn btn-default" href="#tab2" data-toggle="tab">
+                    <span class="fas fa-tachometer-alt" aria-hidden="true"></span>
+                    <div class="hidden-xs">Dashboard</div>
+                </button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab">
+                    <span class="fas fa-map-marker-alt" aria-hidden="true"></span>
+                    <div class="hidden-xs">Map</div>
+                </button>
+            </div>
+        </div>
+
+        <div class="well">
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="tab1">
+                        <a style="margin-left: -15px;margin-top: -15px;margin-bottom: 15px;" href="#" onclick="window.getSignals()" class="btn btn-primary btn-primary"><span class="glyphicon glyphicon-record"></span> Ping</a>
+                        <br/>
+                   <div id="databrowser-placeHolder"></div>
+                </div>
+                <div class="tab-pane fade in" id="tab2">
+                    <h3>comming soon</h3>
+                </div>
+                <div class="tab-pane fade in" id="tab3">
+                    <h3>comming soon</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="client-app/dist/client.bundle.js"></script>
+    <div id="loader-wrapper">
+            <div id="loader">
+                    <div class="sk-cube-grid">
+                            <div class="sk-cube sk-cube1"></div>
+                            <div class="sk-cube sk-cube2"></div>
+                            <div class="sk-cube sk-cube3"></div>
+                            <div class="sk-cube sk-cube4"></div>
+                            <div class="sk-cube sk-cube5"></div>
+                            <div class="sk-cube sk-cube6"></div>
+                            <div class="sk-cube sk-cube7"></div>
+                            <div class="sk-cube sk-cube8"></div>
+                            <div class="sk-cube sk-cube9"></div>
+                    </div>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+    </div>
+</body>
+
+</html>
