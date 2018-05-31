@@ -10,8 +10,13 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-        sh 'docker ps'
-        app = docker.build("getintodevops/hellonode")
+        withDockerContainer(image: 'test', toolName: 'default-docker') {
+            // some block
+            sh 'docker ps'
+            
+            app = docker.build("getintodevops/hellonode")
+        }
+        
     }
 
     stage('Test image') {
