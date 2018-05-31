@@ -14,3 +14,4 @@ COPY . /dockerdir
 EXPOSE 5555
 
 CMD npx webpack --config webpack.config.js && node server-node/server.js
+
