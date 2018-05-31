@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-        withDockerContainer(image: 'test', toolName: 'default-docker') {
+        withDockerContainer(toolName: 'docker2') {
             // some block
             sh 'docker ps'
             
