@@ -24,7 +24,7 @@ window.getSignals = function(){
         headers: {
             'Content-Type': 'application/json; charset=UTF-8'
         },
-        url: "http://35.188.170.37:5555/api/getSignals",
+        url: window.location.origin+"/api/getSignals",
         success: function (data) {
             console.log(data);
             DisplayDataInGrid(data); 
