@@ -5,7 +5,7 @@
   "main": "server-node/server.js",
   "scripts": {
     "init-data-store": "node server-node/init-data-store.js",
-    "test": "mocha --recursive",
+    "test": "mocha --recursive --timeout 30000",
     "start": "node server-node/server.js",
     "build": "npx webpack --config webpack.config.js",
     "dev": "webpack-dashboard -- node server-node/server.js",
@@ -39,7 +39,7 @@
     "mongodb": "^2.2.33",
     "morgan": "^1.9.0",
     "npm": "^6.1.0",
-	"mocha": "^5.2.0",
+    "mocha": "^5.2.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-table": "^6.8.6",
