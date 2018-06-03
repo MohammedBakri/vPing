@@ -7,7 +7,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const rootPath = path.join(__dirname, '');
 const HappyPack = require('happypack');
 var webpack = require("webpack");
-var buildMode = "development" //production //development
+var buildMode = "production" //production //development
 //const HTMLWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: buildMode, //production //development
@@ -41,7 +41,7 @@ module.exports = {
             threads: 20
         }),
 
-        /* new DashboardPlugin(), new UglifyJsPlugin({
+        new DashboardPlugin(), new UglifyJsPlugin({
             cache: true,
             parallel: true,
             uglifyOptions: {
@@ -50,7 +50,7 @@ module.exports = {
                 compress: true
             }
         }),
-        new WebpackJsObfuscator({}, []) */
+        new WebpackJsObfuscator({}, [])
     ],
     module: {
         rules: [{
