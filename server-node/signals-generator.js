@@ -5,7 +5,7 @@ var moment = require("moment");
 var timer = null;
 
 // default interval 30 sec
-function StartEngine(loggingInterval = 30000) {
+function StartEngine(loggingInterval = 60000) {
     console.log("<<<<<<<<----- Signals Engine Started ----->>>>>>>");
     timer = setInterval(function () {
         // select all vehicles from DB
@@ -28,9 +28,9 @@ function StartEngine(loggingInterval = 30000) {
                             },function(err){
                                 console.log(err);
                             })
-                        },GenerateRandomNumber(100000)) 
+                        },GenerateRandomNumber(1000000)) 
                     })
-                },GenerateRandomNumber(100000))
+                },GenerateRandomNumber(1000000))
             });
 
         },function(err){
